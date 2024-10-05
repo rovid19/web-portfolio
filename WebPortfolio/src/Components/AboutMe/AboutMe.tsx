@@ -1,7 +1,8 @@
 import React from "react";
+import "./AboutMeStyling.css";
 
 const AboutMe = () => {
-  return <div></div>;
+  return <section className="about-me-section"> </section>;
 };
 
 export default AboutMe;

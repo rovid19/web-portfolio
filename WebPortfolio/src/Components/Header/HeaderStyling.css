@@ -7,4 +7,45 @@
   position: absolute;
   top: 0;
   left: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 4;
+}
+
+.nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.logo-wrapper {
+  height: 100%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+}
+
+.logo-wrapper > h1 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.navbar-guide {
+  width: calc(100vw - 240px);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav > ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.nav > ul > li {
+  font-size: 14px;
+  font-weight: 100;
+  cursor: pointer;
 }

@@ -34,6 +34,14 @@ const Hero = () => {
         </div>
       </div>
       <img src="../../../assets/Hero Purple Mesh.png" className="hero-mesh" />
+      <img
+        className="orange-hero-mesh"
+        src="../../../assets/OrangeMeshHero.png"
+      />
+      <img
+        className="purple-hero-mesh"
+        src="../../../assets/PurpleHeroMesh.png"
+      />
     </section>
   );
 };

@@ -32,8 +32,3 @@
   --neutral-800: #121212;
   --neutral-900: #0e0e0e;
 }
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}

@@ -32,6 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: start;
+  z-index: 3;
 }
 
 .intro-div-wrapper {
@@ -67,6 +68,7 @@
   color: white;
   font-size: 16px;
   font-weight: 100;
+  cursor: pointer;
 }
 
 .name-wrapper {
@@ -77,6 +79,8 @@
 
 .polygon-hero {
   opacity: 0.5;
+  height: px;
+  width: 32px;
 }
 
 .banner-wrapper {
@@ -93,4 +97,16 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.orange-hero-mesh {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+.purple-hero-mesh {
+  position: absolute;
+  top: 50%;
+  right: 0;
 }
