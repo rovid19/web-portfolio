@@ -1,0 +1,10 @@
+@import "./../../Utils/Colors.css";
+
+.header {
+  width: 100vw;
+  height: 60px;
+  background-color: rgba(33, 33, 33, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+}

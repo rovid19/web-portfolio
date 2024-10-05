@@ -1,5 +1,96 @@
-.Mirko {
+@import "./../../Utils/Colors.css";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hero-section-main {
   height: 100vh;
   width: 100vw;
-  background-color: red;
+  background-color: var(--neutral-700);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.hero-mesh {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.row-guide {
+  width: calc(100vw - 240px);
+  height: 100vh;
+  display: flex;
+}
+
+.hero-row-left {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.intro-div-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 78px;
+}
+
+.name-wrapper > h2 {
+  font-size: 42px;
+  font-weight: 300;
+}
+.name-role-wrapper > h1 {
+  font-size: 52px;
+  font-weight: 500;
+  letter-spacing: normal;
+}
+
+.hero-row-right {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-button {
+  background-color: var(--secondary-500);
+  width: 420px;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.polygon-hero {
+  opacity: 0.5;
+}
+
+.banner-wrapper {
+  width: 100%;
+}
+.hero-vector {
+  position: relative;
+  width: 622px;
+  height: 517px;
+  z-index: 2;
+}
+
+.hero-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
