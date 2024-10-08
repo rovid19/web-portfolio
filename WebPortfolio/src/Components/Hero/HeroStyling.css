@@ -14,99 +14,18 @@
   align-items: center;
 }
 
-.hero-mesh {
+.light-blue-mesh {
+  height: 700px;
+  width: 580px;
   position: absolute;
   top: 0;
   left: 0;
+  filter: blur(120px);
 }
 
-.row-guide {
-  width: calc(100vw - 240px);
-  height: 100vh;
-  display: flex;
-}
-
-.hero-row-left {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  z-index: 3;
-}
-
-.intro-div-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 78px;
-}
-
-.name-wrapper > h2 {
-  font-size: 42px;
-  font-weight: 300;
-}
-.name-role-wrapper > h1 {
-  font-size: 52px;
-  font-weight: 500;
-  letter-spacing: normal;
-}
-
-.hero-row-right {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cta-button {
-  background-color: var(--secondary-500);
-  width: 420px;
-  height: 50px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-size: 16px;
-  font-weight: 100;
-  cursor: pointer;
-}
-
-.name-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.polygon-hero {
-  opacity: 0.5;
-  height: px;
-  width: 32px;
-}
-
-.banner-wrapper {
-  width: 100%;
-}
-.hero-vector {
-  position: relative;
-  width: 622px;
-  height: 517px;
-  z-index: 2;
-}
-
-.hero-lines {
+.dark-blue-mesh {
+  width: 580px;
+  height: 590px;
   position: absolute;
   top: 0;
-  left: 0;
-}
-
-.orange-hero-mesh {
-  position: absolute;
-  top: 50%;
-  right: 0;
-}
-
-.purple-hero-mesh {
-  position: absolute;
-  top: 50%;
-  right: 0;
 }
