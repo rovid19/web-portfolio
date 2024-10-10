@@ -71,8 +71,7 @@
 }
 
 .intro-cta-button:hover {
-  width: 520px;
-  font-size: 16px;
+  width: 430px;
 }
 
 .center-content {
@@ -97,14 +96,14 @@
 .top-line {
   flex-grow: 1;
   width: 2px;
-  background-color: white;
+  background-color: var(--neutral-300);
   z-index: 10;
 }
 
 .bottom-line {
   height: 180px;
   width: 2px;
-  background-color: white;
+  background-color: var(--neutral-300);
   z-index: 10;
 }
 
@@ -153,6 +152,7 @@
 .role-wrapper > h3 {
   font-weight: lighter;
   font-size: 16px;
+  color: var(--neutral-100);
 }
 
 .role-wrapper {

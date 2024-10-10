@@ -1,15 +1,25 @@
-import React, { useEffect, useState } from "react";
-import { animate, motion, useAnimate } from "framer-motion";
+import React, { useContext, useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import "./HeroStyling.css";
+import { globalContext } from "../../Stores/GlobalContext";
 
 const Hero = () => {
+  const globalStore = useContext(globalContext);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      console.log("user is scrolling");
+      globalStore.isScrolling = true;
+      console.log(globalStore.isScrolling);
+    });
+  }, []);
+
   return (
     <section className="hero-section-main">
       <motion.img
         initial={{ x: 0, y: 700 }}
         animate={{
-          x: [600, 200, 100, 600], // Adding the initial position at the end
-          y: [0, 200, 550, 0], // Adding the initial position at the end
+          x: [600, 200, 100, 600],
+          y: [0, 200, 550, 0],
         }}
         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
         className="light-blue-mesh"
@@ -18,8 +28,8 @@ const Hero = () => {
       <motion.img
         initial={{ x: 0, y: 700 }}
         animate={{
-          x: [700, 700, 150, 700], // Adding the initial position at the end
-          y: [100, 220, 100, 100], // Adding the initial position at the end
+          x: [700, 700, 150, 700],
+          y: [100, 220, 100, 100],
         }}
         transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
         className="light-purple-mesh"

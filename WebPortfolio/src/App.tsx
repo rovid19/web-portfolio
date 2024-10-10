@@ -1,21 +1,19 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
 import Hero from "./Components/Hero/Hero";
 import Header from "./Components/Header/Header";
 import AboutMe from "./Components/AboutMe/AboutMe";
-
-interface GlobalContextType {
-  startHeaderAni: boolean;
-}
-
-export const globalContext = createContext<GlobalContextType>({
-  startHeaderAni: false,
-});
+import { globalContext } from "./Stores/GlobalContext";
 
 const App = () => {
-  const [startHeaderAni, setStartHeaderAni] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      console.log(window.scrollY);
+      console.log("user is scrolling");
+    });
+  }, []);
   return (
     <div>
-      <globalContext.Provider value={{ startHeaderAni }}>
+      <globalContext.Provider value={{ isScrolling: false }}>
         <Header />
         <Hero />
         <AboutMe />
